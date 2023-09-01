@@ -37,9 +37,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation(platform("io.cucumber:cucumber-bom:$cucumberVersion"))
-    testImplementation("io.cucumber:cucumber-junit-platform-engine")
-    testImplementation("io.cucumber:cucumber-java")
+    testImplementation("io.cucumber:cucumber-junit-platform-engine:$cucumberVersion")
+    testImplementation("io.cucumber:cucumber-java:$cucumberVersion")
 
     testImplementation(platform("io.qameta.allure:allure-bom:$allureVersion"))
     testImplementation("io.qameta.allure:allure-cucumber6-jvm")
